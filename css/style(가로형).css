@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* 초기화 */
+*{
+    margin:0px auto;
+    padding: 0px;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333333;
+}
+body{
+    width: 1000px;
+    height: 650px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+
+/* header */
+header{
+    float: left;
+}
+.top{
+    float: left;
+    width: 1000px;
+    height: 100px;
+}
+
+/* image  */
+.imgslide{
+    float: left;
+    width: 1000px;
+    height: 350px;
+}
+
+/* contents */
+.contents{
+    float: left;
+    width: 1000px;
+    height: 200px;
+}
+
+/* footer */
+footer{
+    float: left;
+}
+.bottom{
+    float: left;
+    width: 1000px;
+    height: 100px;
+}

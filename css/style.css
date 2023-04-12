@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+/* 초기화 */
+*{
+    margin:0px auto;
+    padding: 0px;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333333;
+}
+body{
+    width: 1000px;
+    height: 650px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+
+/* header */
+header{
+    float: left;
+
+    position: absolute;
+}
+.top{
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+.logo{
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu{
+    float: left;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    text-align: center;
+    z-index: 1;
+}
+.navi>li{
+    float: left;
+    width: 180px;
+}
+.navi>li>a{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+}
+.navi>li>a:hover{
+    background-color: #eee;
+    color: #000;
+}
+.submenu{
+    float: left;
+    width: 180px;
+    height: 100%;
+
+    position: absolute;
+    left: 180px;
+    top:0px; 
+     
+    background-color: #ccc;
+    z-index: 1;
+    display: none;
+}
+
+.submenu>li>a{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ccc;
+    color: #fff;
+}
+.submenu>li>a:hover{
+    background-color: #999;
+    color: #ffff00;
+}
+
+/* image */
+.imgslide{
+    float: right;
+    width: 800px;
+    height: 350px;
+
+    position: relative;
+
+    /* 좌우 또는 상하 슬라이드 작업시 */
+    overflow: hidden;
+}
+.imgslide>a{
+    position: absolute;
+    display: block;
+
+    /* 좌우 또는 상하 슬라이드 작업시 */
+    transition: all 3s;
+}
+.imgslide span{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.5;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    
+    margin-left: -100px;
+    margin-top: -25px;
+}
+
+/* contents */
+.contents{
+    float: right;
+    width: 800px;
+    height: 200px;
+}
+.notice{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.tab{
+    float: left;
+    width: 300px;
+}
+.notice h4{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.notice ul{
+    float: left;
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.notice li span{
+    float: right;
+}
+.notice li:hover{
+    font-weight: bold;
+}
+
+.gallery{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.gallery h4{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.gallery ul li{
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+.gallery img{
+    width: 80px;
+    height: 80px;
+}
+.gallery li:hover{
+    opacity: 0.5;
+}
+
+.shortcut{
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+.shortcut img{
+    float: right;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+}
+.sctext{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #000;
+    opacity: 0.5;
+    margin-left: 50px;
+    margin-top: 85px;
+}
+.shortcut a:hover{
+    opacity: 0.5;
+}
+
+/* 모달작업 */
+#modal{   
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+    display: none;
+}
+#modal.active{
+    display: block;
+}
+
+.modal_up{
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 40%;
+    top:30%;
+    background-color: #fff;
+    border-radius: 2%;
+    border: 1px solid #000;
+}
+.uptitle{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody{
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+.btn{
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 2%;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+
+/* footer */
+footer{
+    float: right;
+}
+.bottom{
+    float: right;
+    width: 800px;
+    height: 100px;
+
+    background-color: #ccc;
+}
+.btlogo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+.btlogo img{
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.copy{
+    float: left;
+    width: 400px;
+    height: 100px;
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 100px;
+}
+.familysite{
+    float: right;
+    width: 200px;
+    height: 100px;
+}
+.familysite select{
+    float: right;
+    height: 30px;
+    width: 180px;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+    text-align: center;
+}
